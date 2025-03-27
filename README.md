@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>e2e tests</h1>
+  <h1>Test the sign up flow.</h1>
   <br/>
   <br/>
 </div>
