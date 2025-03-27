@@ -4,15 +4,14 @@ import { Dashboard } from "../pages/dashboard";
 const loginPage = new Login();
 const dashBoard = new Dashboard();
 
-describe("check required fields in create an account", () => {
-
+describe("Missing Required Fields In Create Account", () => {
   beforeEach(() => {
     // Ensure cookies/local storage are cleared to avoid test interference
     cy.clearCookies();
     cy.clearLocalStorage();
   });
 
-  it("check required fields in create an account", () => {
+  it("Missing Required Fields In Create Account", () => {
     
     loginPage.goToHomePage();
 

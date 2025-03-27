@@ -2,7 +2,7 @@ import { Login } from "../pages/login";
 
 const loginPage = new Login();
 
-describe("check required fields in login page", () => {
+describe("Missing Required Fields in Login", () => {
 
   beforeEach(() => {
     // Ensure cookies/local storage are cleared to avoid test interference
@@ -10,7 +10,7 @@ describe("check required fields in login page", () => {
     cy.clearLocalStorage();
   });
 
-  it("check required fields in login page", () => {
+  it("Missing Required Fields in Login", () => {
     const email = "ad12@gmail.com"; 
     const password = "Password@12"; 
 

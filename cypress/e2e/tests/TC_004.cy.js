@@ -2,15 +2,14 @@ import { Login } from "../pages/login";
 
 const loginPage = new Login();
 
-describe("check email input field in login page", () => {
-
+describe("Email with Special Characters and without domain ", () => {
   beforeEach(() => {
     // Ensure cookies/local storage are cleared to avoid test interference
     cy.clearCookies();
     cy.clearLocalStorage();
   });
 
-  it("check email input field in login page", () => {
+  it("Email with Special Characters and without domain ", () => {
     const text = "aabdsfgab";
     const textSecond = "@awsdfghjkl"
     const digit = 123456789;
