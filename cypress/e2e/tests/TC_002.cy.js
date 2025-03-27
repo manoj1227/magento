@@ -4,15 +4,14 @@ import { Dashboard } from "../pages/dashboard";
 const loginPage = new Login();
 const dashBoard = new Dashboard();
 
-describe("check with wrong creditionals", () => {
-
+describe("Login with invalid creditionals", () => {
   beforeEach(() => {
     // Ensure cookies/local storage are cleared to avoid test interference
     cy.clearCookies();
     cy.clearLocalStorage();
   });
 
-  it("check with wrong creditionals", () => {
+  it("Login with invalid creditionals", () => {
     const email = "ad12@gmail.com"; // correct email
     const password = "Massword@12"; // wrong password
 

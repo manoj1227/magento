@@ -6,8 +6,7 @@ const loginPage = new Login();
 const dashBoard = new Dashboard();
 const helpers = new Helpers();
 
-describe("Valid Signup", () => {
-
+describe("Valid Signup/Sign-in After Signup", () => {
   beforeEach(() => {
     // Ensure cookies/local storage are cleared to avoid test interference
     cy.clearCookies();
@@ -15,7 +14,7 @@ describe("Valid Signup", () => {
   });
 
 
-  it("Valid Signup", () => {
+  it("Valid Signup/Sign-in After Signup", () => {
     const email = helpers.getMockEmail();
     const firstName = helpers.getFirstName();
     const lastName = helpers.getLastName();
